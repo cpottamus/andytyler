@@ -6,8 +6,8 @@ Andy::Application.routes.draw do
   match "past"=>"collections#past"
   get "present"=>"collections#present"
   get "future"=>"collections#future"
-  match "about"=>"collections#about"
-  match "contact"=>"collections#contact"
+  match "about"=>"root#about"
+  match "contact"=>"root#contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
