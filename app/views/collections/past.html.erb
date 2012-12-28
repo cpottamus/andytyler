@@ -1,0 +1,12 @@
+<h1> Past Works </h1>
+<% @works.each do |c| %>
+	Title: 
+	<%= c.title %>
+	<br>
+	Info:
+	<%= c.info %>
+	<br>
+	<%= image_tag c.image.url(:medium) if c.image_file_name!=nil%>
+	<br>
+	<br>
+<% end %>
